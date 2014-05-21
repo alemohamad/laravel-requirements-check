@@ -46,6 +46,8 @@ echo "*  Laravel 4.1 requirements check  *\n";
 echo "*                                  *\n";
 echo "************************************\n\n";
 
+echo "** Website: " . $_SERVER['SERVER_NAME'] . " **\n\n";
+
 echo sprintf("php.ini used by PHP: %s\n\n", get_ini_path());
 
 if (is_cli()) {
