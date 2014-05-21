@@ -1,0 +1,4 @@
+# Apache URI Rewrite Test
+
+RewriteEngine On
+RewriteRule ^check.php$ check.php?rewrite=on [QSA,L]
