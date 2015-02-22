@@ -53,6 +53,11 @@ echo "** Website: " . $_SERVER['SERVER_NAME'] . " **\n\n";
 
 echo sprintf("php.ini used by PHP: %s\n\n", get_ini_path());
 
+echo "** PHP settings **\n\n";
+echo sprintf("  max_execution_time:  %s\n", ini_get('max_execution_time'));
+echo sprintf("  upload_max_filesize: %s\n", ini_get('upload_max_filesize'));
+echo sprintf("  post_max_size:       %s\n\n", ini_get('post_max_size'));
+
 if (is_cli()) {
   echo "** WARNING **\n";
   echo "*  The PHP CLI can use a different php.ini file\n";
